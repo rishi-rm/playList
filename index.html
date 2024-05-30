@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayList</title>
+    <link rel="stylesheet" href="playlist.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      body {
+        background-image: url(images/background.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .song-image {
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+      }
+
+      .song-image:hover {
+        filter: brightness(0.5);
+      }
+
+      .no {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="top">
+      <div class="name">
+        <div id="playlist">Playlist</div>
+      </div>
+      <div class="play-div" style="display: flex">
+        <div class="edit-div">
+          <img class="edit" src="images/edit.png" alt="" />
+        </div>
+        <img
+          class="play images"
+          src="images/istockphoto-1327090517-612x612-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="shuffle-div">
+        <img
+          src="images/istockphoto-1174303168-612x612-removebg-preview.png"
+          alt=""
+          class="shuffle images"
+        />
+      </div>
+      <div class="add images">+</div>
+
+      <svg
+        class="previous controls"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          fill="#ffffff"
+          d="M459.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4L288 214.3V256v41.7L459.5 440.6zM256 352V256 128 96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160C4.2 237.5 0 246.5 0 256s4.2 18.5 11.5 24.6l192 160c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V352z"
+        />
+      </svg>
+      <div class="pauseToggle images">
+        <svg
+          class="controls"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+        >
+          <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            fill="#fcfcfc"
+            d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+          />
+        </svg>
+      </div>
+      <svg
+        class="next controls"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 512 512"
+      >
+        <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+        <path
+          fill="#ffffff"
+          d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4L224 214.3V256v41.7L52.5 440.6zM256 352V256 128 96c0-12.4 7.2-23.7 18.4-29s24.5-3.6 34.1 4.4l192 160c7.3 6.1 11.5 15.1 11.5 24.6s-4.2 18.5-11.5 24.6l-192 160c-9.5 7.9-22.8 9.7-34.1 4.4s-18.4-16.6-18.4-29V352z"
+        />
+      </svg>
+    </div>
+    <div class="gap"></div>
+    <div class="songs-container">
+      <div class="inner-div">
+        <div class="songs-column">
+          <div id="title">
+            <div class="number heading">#</div>
+            <div class="title headings">title</div>
+            <div class="author headings">author</div>
+            <div class="album headings">album</div>
+          </div>
+          <div   style="display: grid; grid-template-columns: 0.5fr 2fr 1fr 1fr">
+            <div class="no">1</div>
+            <div class="song song-details" style="display: flex; gap: 10px">
+              <img class="song-image" src="images/cantfeelmyface.jpg" />Can't Feel My Face
+            </div>
+            <div class="author-name song-details">The Weeknd</div>
+            <div class="album-name song-details">Beauty Behind The Madness</div>
+          </div>
+          <div    style="display: grid; grid-template-columns: 0.5fr 2fr 1fr 1fr">
+            <div class="no">2</div>
+            <div class="song song-details" style="display: flex; gap: 10px">
+              <img class="song-image" src="images/likethat.png" />Like That
+            </div>
+            <div class="author-name song-details">Future, Metro Boomin</div>
+            <div class="album-name song-details">WE DON'T TRUST YOU</div>
+          </div>
+          <div    style="display: grid; grid-template-columns: 0.5fr 2fr 1fr 1fr">
+            <div class="no">3</div>
+            <div class="song song-details" style="display: flex; gap: 10px">
+              <img class="song-image" src="images/creepin'.jpg" />Creepin'
+            </div>
+            <div class="author-name song-details">Metro Boomin, The Weeknd</div>
+            <div class="album-name song-details">HEROES & VILLAINS</div>
+          </div>
+          <div    style="display: grid; grid-template-columns: 0.5fr 2fr 1fr 1fr">
+            <div class="no">4</div>
+            <div class="song song-details" style="display: flex; gap: 10px">
+              <img class="song-image" src="images/thescotts.jpg" />The Scotts
+            </div>
+            <div class="author-name song-details">THE SCOTTS, Travis Scott</div>
+            <div class="album-name song-details">THE SCOTTS</div>
+          </div>
+          <div    style="display: grid; grid-template-columns: 0.5fr 2fr 1fr 1fr">
+            <div class="no">5</div>
+            <div class="song song-details" style="display: flex; gap: 10px">
+              <img class="song-image" src="images/sunflower.jpg" />Sunflower
+            </div>
+            <div class="author-name song-details">Post Malone & Swae Lee</div>
+            <div class="album-name song-details">THE SCOTTS</div>
+          </div>
+          <div    style="display: grid; grid-template-columns: 0.5fr 2fr 1fr 1fr">
+            <div class="no">6</div>
+            <div class="song song-details" style="display: flex; gap: 10px">
+              <img class="song-image" src="images/notlikeus.png" />Not Like Us
+            </div>
+            <div class="author-name song-details">Kendrick Lamar</div>
+            <div class="album-name song-details">Not Like Us</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="playlist.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </body>
+</html>

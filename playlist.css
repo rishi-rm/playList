@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width:  100vw;
+    background-image: linear-gradient(rgb(34,33,33),grey,rgb(34, 33, 33));
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.songs-container {
+    height: 70vmin;
+    width: 150vmin;
+    background-color: rgb(24, 24, 24);
+    border-radius: 20px;
+    display: flex;
+    justify-content: right;
+    border: 2px solid white;
+    /* -webkit-box-shadow: -2px -4px 119px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -4px 119px -27px rgba(0,0,0,0.75);
+    box-shadow: -2px -4px 119px -27px rgba(0,0,0,0.75); */
+}
+.name{
+    cursor: pointer;
+}
+.top {
+    /* -webkit-box-shadow: -2px -4px 119px -27px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px -4px 119px -27px rgba(0,0,0,0.75);
+    box-shadow: -2px -4px 119px -27px rgba(0,0,0,0.75); */
+    background-color: rgb(30, 30, 30);
+    border-radius: 20px;
+    font-family: 'Roboto','Poppins', sans-serif;
+    color: white;
+    padding: 3%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    font-size: 2.5rem;
+    display: flex;
+    width: 137vmin;
+    gap: 30px;
+    user-select: none;
+    letter-spacing: 5px;   
+    border: 2px solid white;
+}
+.edit{
+    height: 30px;
+    width:  30px;
+    position: relative;
+    right: 150px;
+    cursor: pointer;
+    display: inline;
+    /* bottom: 10px; */
+}
+.images{
+    cursor: pointer;
+}
+.images:hover{
+    opacity: 0.85;
+}
+.lower-opacity{
+    opacity: 0.1;
+}
+.shuffle-div:hover{
+    opacity: 0.8;
+    
+}
+.input-field{
+    height: 50px;
+    background-color: rgb(23, 22, 22);
+    border: 0;
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    right: 150px;
+    width: 300px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+.play{
+    height: 50px;
+    width:  45px;
+    position: relative;
+    top: 5px;
+}   
+.shuffle{
+    height: 40px;
+    width:  40px;
+    position: relative;
+    /* top: 5px; */
+}
+.shuffle-div{
+    height: 30px;
+    width:  30px;
+    border: 3px solid white;
+    padding: -1;
+    border-radius: 50px;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 13px;
+}
+.previous, .next{
+    height: 25px;
+    width:  25px;
+    align-self:center ;
+    cursor: pointer;
+}
+.pauseToggle{
+    height: 20px;
+    width:  20px;
+}
+#title{
+    display: grid;
+    grid-template-columns: 0.5fr 2fr 1fr 1fr;
+}
+.gap{
+    height: 10px;
+}
+.songs-column{
+    display: grid;
+    grid-template-rows: repeat(1fr,6);
+    row-gap: 15%;
+    margin-top: 1.5%;
+    width: 100%;
+    /* border: 1px solid cyan; */
+}
+.inner-div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 2%;
+    /* border: 2px solid cyan; */
+}
+.number{
+    color: rgb(170, 170, 170);
+}
+.headings{
+    color: rgb(170, 170, 170);
+    text-transform: capitalize;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.no{
+    color: white;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.song-details{
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+}
+.song{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.author-name , .album-name{
+    color: rgb(208, 201, 201);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inner-div::-webkit-scrollbar{
+    display: none;
+}
+.mouse-over{
+    filter: brightness(0.5);
+}
+.song{
+    cursor: pointer;
+    user-select: none;
+}
+
+
+.name span {
+    display: inline-block;
+    position: relative;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.animate {
+    animation: bounce 0.5s ease-in-out;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
